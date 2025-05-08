@@ -23,6 +23,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     });
+
+
+    // -----------------------------backTop--------------------------------
+    $(window).scroll(function(){
+        if($(this).scrollTop()){
+          $('#backtop').fadeIn();
+        } else{
+          $('#backtop').fadeOut();
+        }
+      });
+  
+      $("#backtop").click(function(){
+        $('html, body').animate({scrollTop:0}, 500);  //500: toc do back
+      });
+
 });
+
+
+
+
 
 
